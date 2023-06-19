@@ -9,7 +9,7 @@ import UIKit
 
 class PersonListTableViewController: UITableViewController {
 
-    private var personList = Person.getPerson()
+    private var personList = Person.getPersonList()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +21,6 @@ class PersonListTableViewController: UITableViewController {
         personList.count
     }
 
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "person", for: indexPath)
         var content = cell.defaultContentConfiguration()

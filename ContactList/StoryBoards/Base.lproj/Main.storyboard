@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UNl-Hj-1Kl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kSW-db-9QT">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Persons List-->
+        <!--Contact-->
         <scene sceneID="sl9-IB-8zc">
             <objects>
                 <tableViewController id="EvJ-WZ-gUr" customClass="PersonListTableViewController" customModule="ContactList" customModuleProvider="target" sceneMemberID="viewController">
@@ -39,48 +39,49 @@
                             <outlet property="delegate" destination="EvJ-WZ-gUr" id="3jB-Pn-BxD"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Contacts" image="person.circle" catalog="system" id="SJa-VU-fVJ"/>
-                    <navigationItem key="navigationItem" title="Persons List" id="qt9-k2-O39"/>
+                    <tabBarItem key="tabBarItem" title="Contact" image="person.circle" catalog="system" id="AlL-5a-KLF"/>
+                    <navigationItem key="navigationItem" id="qt9-k2-O39"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dkw-ta-Bzp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2048" y="-464"/>
+            <point key="canvasLocation" x="3534" y="-464"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="VLa-Iw-ftW">
+        <!--Contacts-->
+        <scene sceneID="5dg-Kr-tCV">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UNl-Hj-1Kl" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kSW-db-9QT" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Contacts" image="person.circle" catalog="system" id="SJa-VU-fVJ"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="Fd2-51-ick">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="7gV-Qc-QGH">
                         <rect key="frame" x="0.0" y="59" width="393" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="EJQ-Mt-7Av" kind="relationship" relationship="rootViewController" id="5gU-hJ-mUd"/>
+                        <segue destination="RAg-jX-PgE" kind="relationship" relationship="rootViewController" id="BLx-H8-eWb"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="MXU-qi-9ns" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KjU-mH-pZg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="548.85496183206101" y="-464.08450704225356"/>
+            <point key="canvasLocation" x="2046.564885496183" y="-464.08450704225356"/>
         </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="P3R-Gh-4c2">
+        <!--Persons List-->
+        <scene sceneID="WOx-o2-joc">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="EJQ-Mt-7Av" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="RAg-jX-PgE" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="zlH-ZV-U4a"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gPc-Sf-SbS">
+                    <navigationItem key="navigationItem" title="Persons List" id="1QA-eg-XRi"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kns-Rj-i9b">
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="EvJ-WZ-gUr" kind="relationship" relationship="viewControllers" id="hPK-kk-y1h"/>
+                        <segue destination="EvJ-WZ-gUr" kind="relationship" relationship="viewControllers" id="MPC-Oj-ofK"/>
                     </connections>
                 </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8MJ-8D-CNA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x48-Vz-6wZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1270.9923664122136" y="-464.08450704225356"/>
+            <point key="canvasLocation" x="2782" y="-464"/>
         </scene>
     </scenes>
     <resources>
